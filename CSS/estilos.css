@@ -1,0 +1,71 @@
+
+
+.globo-image1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.globo-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+width: 100%;
+height: 70%;
+
+
+}
+
+.globo-image1 img{
+animation-name: globoslide;
+animation-duration: 5s;
+
+}
+
+
+
+@keyframes globoslide {
+  0%{
+    margin-top: 0%;
+    width:30%;
+    opacity: 1;
+  }
+
+  70%{
+    margin-bottom: 50%;
+    width: 70%;
+    opacity: 1;
+  }
+100%{
+  margin-bottom: 50%;
+  width:70%;
+opacity: 0;
+}
+}
+
+#desinflado{
+animation: globoexplot 4s forwards;
+
+}
+
+
+@keyframes  globoexplot {
+      0%   {opacity: 1;}
+      90%  {opacity: 1;}
+      100% {opacity: 0;}
+
+
+}
+
+@media screen and (max-width:768px){
+body{
+  width: auto;
+  height: auto;
+}
+.globo-image1, .globo-image2{
+  width: auto;
+  height: auto;
+}
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="CSS/estilos.css">
+  <title>Globo Explosivo</title>
+</head>
+<body>
+  <button type="button" onclick="myFunction2()">Start</button>
+
+  <div class="globo-image1" >
+    <img id= "inflado" src="images/globo.png">
+
+  </div>
+<div class="globo-image2" style="display:none;">
+  <img id= "desinflado" src="images/globo-explotado.png" width="450">
+</div>
+
+
+
+
+
+ <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script type="text/javascript">
+
+  $(document).ready(function() {
+
+      setTimeout(function() {
+          $(".globo-image1").fadeOut(100);
+      },3000);
+
+      setTimeout(function() {
+          $(".globo-image2").fadeIn(1000);
+      },500);
+  });
+
+
+
+  </script>
+<!--
+<script >
+ var desinflado=document.getElementById('desinflado').style.visibility='visible'
+  setTimeout(function(){
+    document.getElementById('inflado').style.display='none'
+  },5000);
+
+function retardo(){
+  globofallido=$("#desinflado");
+  globofallido.slideUp(5000);
+  globofallido.delay(5000);
+
+} -->
+
+<!--
+//   if(document.getElementById('inflado').style.display='none'){
+//   setTimeout(function(){
+//     d
+//   },5000);
+// } -->
+
+
+<!-- </script> -->
+
+
+</body>
+
+</html>
